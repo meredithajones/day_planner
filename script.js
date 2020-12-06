@@ -23,7 +23,7 @@ document.getElementById("9")
 const oneHour = document.getElementsByClassName("timeSlot");
 console.log(oneHour);
 
-let currentHour = parseInt(moment().format('H'));
+let currentHour = parseInt(moment(dateToday).format('H'));
 
 // let currentHour = dateToday
 
@@ -31,8 +31,8 @@ Array.from(oneHour).forEach(timeslot => {
   let
     timeSlotIdString = timeslot.id,
     timeSlotHour;
-  if (timeslotIdString) {
-    timeSlotHour = parseInt(timeslotIdString);
+  if (timeSlotIdString) {
+    timeSlotHour = parseInt(timeSlotIdString);
   }
   if (timeSlotHour) {
     // Compares row id to current hour and sets color accordingly
