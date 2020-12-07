@@ -42,17 +42,22 @@
       <!-- Each time slot will need a unique id to be refrenced in the javascript -->
 
 <!-- <div class="event" data-date= > -->
+  
   <div class="timeSlot">
     <section id="9">
       <div class="input-group input-group-lg">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-lg">9AM</span>
+          <span class="input-group-text" id="inputGroup-sizing-lg" data-time= "9:00"></span>
         </div>
+        <div id="input1"></div>
         <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-        <section id="9">
+          <!-- Adding the save button & icon to the end of each row -->
+          <div class="ml-auto p-2 saveBtn"><i class="fas fa-save"></i></div>
       </div>
     </div>
+    </div>
   </section>
+
 
   <div class="timeSlot">
   <section id="10">   
@@ -61,7 +66,7 @@
           <span class="input-group-text" id="inputGroup-sizing-lg">10AM</span>
         </div>
         <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-        <section id="9">
+          <div class="ml-auto p-2 saveBtn"><i class="fas fa-save"></i></div>
       </div>
     </section>
   </div>
@@ -73,6 +78,7 @@
           <span class="input-group-text" id="inputGroup-sizing-lg">11AM</span>
         </div>
         <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+        <div class="ml-auto p-2 saveBtn"><i class="fas fa-save"></i></div>
       </div>
     </section>
   </div>
@@ -85,6 +91,7 @@
           <span class="input-group-text" id="inputGroup-sizing-lg">12PM</span>
         </div>
         <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+        <div class="ml-auto p-2 saveBtn"><i class="fas fa-save"></i></div>
       </div>
     </section>
 </div>
@@ -95,6 +102,7 @@
           <span class="input-group-text" id="inputGroup-sizing-lg">1PM</span>
         </div>
         <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+        <div class="ml-auto p-2 saveBtn"><i class="fas fa-save"></i></div>
       </div>
   </section>
 
@@ -104,6 +112,7 @@
           <span class="input-group-text" id="inputGroup-sizing-lg">2PM</span>
         </div>
         <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+        <div class="ml-auto p-2 saveBtn"><i class="fas fa-save"></i></div>
       </div>
     </section>
 
@@ -113,6 +122,7 @@
           <span class="input-group-text" id="inputGroup-sizing-lg">3PM</span>
         </div>
         <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+        <div class="ml-auto p-2 saveBtn"><i class="fas fa-save"></i></div>
       </div>
     </section>
 
@@ -122,6 +132,7 @@
           <span class="input-group-text" id="inputGroup-sizing-lg">4PM</span>
         </div>
         <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+        <div class="ml-auto p-2 saveBtn"><i class="fas fa-save"></i></div>
       </div>
     </section>
 
@@ -131,6 +142,7 @@
           <span class="input-group-text" id="inputGroup-sizing-lg">5PM</span>
         </div>
         <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+        <div class="ml-auto p-2 saveBtn"><i class="fas fa-save"></i></div>
       </div>
     </section>
 
@@ -140,6 +152,7 @@
           <span class="input-group-text" id="inputGroup-sizing-lg">6PM</span>
         </div>
         <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+        <div class="ml-auto p-2 saveBtn"><i class="fas fa-save"></i></div>
       </div>
     </div>
   </section>
@@ -155,7 +168,7 @@
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
     <!-- Linking dayjs belows -->
     <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <!--Linking javascript file below -->
