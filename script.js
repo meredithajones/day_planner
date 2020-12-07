@@ -11,13 +11,11 @@ console.log(dateToday);
 // }
 
 //Formatting the current date to display properly using dayjs
-var currentDay = dayjs().format("ddd")
+var currentDay = dayjs().format("dddd, MMMM D YYYY")
+    console.log(currentDay);
 
 // Displaying the current date at the top when the planner opens
-document.getElementById("forToday").innerHTML = dateToday
-document.getElementById("forToday").format = dayjs().format("HH");
-
-console.log(dayjs(dateToday).format('ddd' ));
+document.getElementById("currentDay").innerHTML = currentDay
 
 console.log(dayjs());
 
@@ -34,10 +32,11 @@ var InputTextEl = $("inputText");
 //Connect time colums to moment.js so we can color code our tasks columns according to
 //past, present, future
 
-//Create a for loop so all hoursArray are compared against the variable hoursDisplay
+//Create a for loop so the items in hoursArray get compared 
+//against the variable hoursDisplay
 for (var i = 0; i < hoursArray.length; i++) {
 
-  //Convert the hoursDisplay string into a number and save
+  //Convert hoursDisplay string into a number and save
   // it in hoursDisplayType.
 
   var hoursDisplayType = parseInt(hoursDisplay);
@@ -59,14 +58,58 @@ console.log(hoursDisplayType)
 
 
 
-//Checking to see if local storage already exists
-let items
+//Setting up local storage
+//assigning variables to assign storage 
 
-if (localStorage.getItem('items')) {
-  items = JSON.parse(localStorage.getItem('items'))
-} else {
-  items = []
-}
+// const storageContent = document.querySelector('.storage');
+// const text = document.querySelector('.form-control');
+// const button = document.querySelector('.bml-auto p-2 saveBtn')
+
+
+// button.addEventListener(onclick, task => {
+//     console.log(task.target.value)
+//     text.textContent.target.value
+
+// })
+
+ // Put our ItemsToDo into an object 
+//  var ItemsToDo = {
+//     NineAM: textAreaEl[0].value.trim(),
+//     TenAM: textAreaEl[1].value.trim(),
+//     ElevenAM: textAreaEl[2].value.trim(),
+//     TwelvePM: textAreaEl[3].value.trim(),
+//     OnePM: textAreaEl[4].value.trim(),
+//     TwoPM: textAreaEl[5].value.trim(),
+//     ThreePM: textAreaEl[6].value.trim(),
+//     FourPM: textAreaEl[7].value.trim(),
+//     FivePM: textAreaEl[8].value.trim(),
+
+
+//Checking to see if local storage already exists
+// let items
+
+// if (localStorage.getItem('items')) {
+//   items = JSON.parse(localStorage.getItem('items'))
+// } else {
+//   items = []
+// }
+
+//When we reload the page, we need to see the most recent inputs from out to do list, re-displayed from local storage. 
+// var lastTasks = JSON.parse(localStorage.getItem("Todo"));
+
+//Need to create a "Todo" object when the save button is clicked. 
+
+//Need to store the "Todo" object in local storage. 
+// localStorage.setItem("Todo", JSON.stringify(Todo));
+
+
+ //Creating the fucntion for the save button. When we click the button, 
+ //the content for the corresponding time slot needs to save to local storage. 
+        // function saveToDo(event) {
+        //     event.preventDefault();
+
+//Calling the save function for our save button 
+// $(".saveBtn").on("click", saveToDo);
 
 //Write a function for each time slot in which if they are in the past, the section is blue-if it is in the present there
 //is no fill color, and if it is in the future, it is green.
