@@ -1,4 +1,5 @@
 Meredith Jones Day Planner 
+==================================================
 Created with Javascript
 
 In this project, I created a day planner designed for tracking tasks to be done during a user's work day. 
@@ -16,4 +17,7 @@ Additionally, the planner will store inputs in local storage if a user presses t
 
 For the date formating, I utilized dayjs and for the "save" icons on the time blocks, I used fontawesome. 
 
-This project definitely presented some complexity relating to looping through the times assigned to each block and comparing them to the present time, as well as in the process of storing and retrieving user inputs to local storage. Those two pieces of the project took the vast majority of my time. I am happy with the functionality and how much it looks like the given goal for appearance. 
+This project definitely presented some complexity relating to the process of capturing times assigned to each block and comparing them to the present time, as well as in the process of storing and retrieving user inputs to local storage. 
+Those two pieces of the project took the vast majority of my time. I am happy with the functionality and how much it looks like the given goal for appearance. 
+
+Here is a link to visit my live page with the planner: https://meredithajones.github.io/day_planner/
