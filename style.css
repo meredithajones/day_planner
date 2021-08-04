@@ -1,3 +1,7 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Staatliches&display=swap');
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -5,7 +9,11 @@ body {
   background-color: #FEFFDE;
 }
 
-textarea{
+h1 {
+  font-family: Staatliches;
+}
+
+textarea {
   background: transparent;
   border: none;
   resize: none;
@@ -23,19 +31,21 @@ textarea{
   background-color: #BDD2B6;
 }
 
-.description{
+.description {
   white-space: pre-wrap;
 }
 
-.time-block{
+.time-block {
   text-align: center;
   border-radius: 15px;
+  
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  border-top: 1px solid white;
+  margin: 15px;
 }
 
 .hour {
@@ -63,8 +73,8 @@ textarea{
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
-  color: white;
+  background-color: #DDFFBC;
+  color: black;
 }
 
 .saveBtn i:hover {
@@ -74,6 +84,7 @@ textarea{
 
 .input-group-prepend {
   width: 80px;
+  background-color: #DDFFBC;
 }
 
 input #form-control {
