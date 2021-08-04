@@ -1,11 +1,9 @@
 
 // Setting up the variable to display the current date at the top of the planner
 var dateToday = new Date();
-console.log(dateToday);
 
 //Formatting the current date to display properly using dayjs
 var currentDay = dayjs().format("dddd, MMMM D YYYY")
-    console.log(currentDay);
 
 // Displaying the current date at the top when the planner opens
 document.getElementById("currentDay").innerHTML = currentDay
@@ -39,7 +37,6 @@ $("#15 .input-group .form-control").val(localStorage.getItem("15"));
 $("#16 .input-group .form-control").val(localStorage.getItem("16"));
 $("#17 .input-group .form-control").val(localStorage.getItem("17"));
 
-// console.log(hoursDisplayType)
 
 //setting up a function to capture and format the time 
 //associated with each block on the schedule. 
@@ -68,9 +65,6 @@ var input = $(this).children().children().children("input")
     input.removeClass("present")
      input.addClass("future");
    }
-
-   
-     
 
     })
 };
