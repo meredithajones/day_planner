@@ -2,6 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: #FEFFDE;
 }
 
 textarea{
@@ -19,6 +20,7 @@ textarea{
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+  background-color: #BDD2B6;
 }
 
 .description{
@@ -68,4 +70,12 @@ textarea{
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+
+.input-group-prepend {
+  width: 80px;
+}
+
+input #form-control {
+  border-bottom: 2px black solid;
 }
